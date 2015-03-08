@@ -877,7 +877,9 @@
             }
             // update date popup
             if (['date', 'time'].indexOf(obj.type) != -1) {
+                if (event.keyCode !== 9) {
                 setTimeout(function () { obj.updateOverlay(); }, 1);
+                }
             }
         },
 
